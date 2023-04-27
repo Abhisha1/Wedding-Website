@@ -1,0 +1,451 @@
+#root {
+  text-align: center;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-width: min-content !important;
+}
+.rootContainer {
+  scroll-behavior: smooth;
+  width: 100%;
+  min-width: min-content !important;
+}
+
+#closeModalTitle {
+  font-weight: lighter !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: 'My-font';
+  src: url(../styles/fonts/Gistesy.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url(../styles/fonts/Lora-Regular.ttf) format('truetype');
+}
+
+.infoBlock {
+  padding: 10rem 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-height: fit-content;
+  justify-content: center;
+}
+
+.infoBlock p {
+  font-size: 1.5rem;
+  font-family: 'Lora', serif;
+}
+
+.infoBlockV{
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  max-height: fit-content;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.boxShadow {
+  display: flex;
+  flex-direction: row !important;
+  max-height: fit-content;
+  justify-content: center;
+  width: 100%;
+}
+
+#timeline h3, #timeline h4, .infoBlockChild h3 {
+  font-family: 'Lora', serif;
+  font-weight: lighter;
+  font-size: xx-large;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+
+.infoBlockChild h5, .infoBlockChild p {
+  font-family: 'Lora', serif;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+#timeline h4{
+  font-size: x-large;
+  font-weight: bolder !important;
+}
+
+#onTheDay {
+  margin-top: 0;
+}
+
+.pattern, .nav-box{
+  padding: 5rem;
+}
+
+.infoBlockChild {
+  background-color: #ffffffe8;
+  padding: 1rem;
+}
+
+.loadingImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 100vh;
+}
+
+#landingTitle{
+  font-size: 4vw !important;
+  margin-bottom: 2rem;
+}
+
+#loadingImageBlock{
+  flex: 1
+}
+
+@media screen and (max-width: 425px) {
+  #loadingImageBlock {
+    flex: 0
+  }
+  .loadingImage {
+    height: 0;
+  }
+}
+
+.landingPage h4 {
+  color: white;
+}
+
+.navList {
+  font-size: large;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: rgb(31, 30, 30) !important;
+}
+
+.navList:hover{
+  color: black !important;
+}
+
+
+.JoyListItemButton-root:hover{
+  background-color: var(--primary) !important;
+}
+
+.infoBlockContainer{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: fit-content;
+  flex-direction: row;
+}
+
+.infoBlockChild{
+  flex: 1 !important;
+  text-align: left;
+}
+
+.infoBlockChildDetailsTitle{
+  font-family: 'My-font', Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  letter-spacing: 0.1rem;
+}
+.infoBlockTitle {
+  font-weight: lighter !important;
+  text-transform: uppercase !important;
+  font-size: 4rem !important;
+}
+
+.typeWriter{
+  font-family: 'My-font', Arial, Helvetica, sans-serif !important;
+  font-size: 8vw !important;
+  text-align: center !important;
+  font-weight: 500 !important;
+  margin-top: 5rem !important;
+}
+
+.image{
+  opacity: 30%;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.imageTextContainer{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.schedule{
+  padding-left: 1rem;
+  border-left: 1px solid black;
+}
+
+.parentNewContainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  flex-direction: row;
+  padding: 5rem;
+  border: 50px solid var(--primary);
+}
+.newContainer {
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  font-size: larger;
+}
+
+.parentNewContainer p {
+  font-family: 'Lora', serif;
+}
+
+.textBlock{
+  /* background-color: white; */
+  border-radius: 0.5rem;
+  position: absolute;
+  min-width: 650px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+@media screen and (max-width: 767px) {
+  .textBlock{
+    max-height: 520px !important;
+  }
+  .image{
+    width: 100%;
+    opacity: 30%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .boxShadow {
+    flex-direction: column !important;
+  }
+  #recBoxShadow {
+    flex-direction: column-reverse !important;
+  }
+  .typeWriter {
+    font-size: 10vw !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .textBlock{
+    height: 70%;
+    padding: 5rem;
+    margin: 0 2rem;
+  }
+}
+
+.imageBlock {
+  height: auto;
+  width: 100%;
+}
+
+.infoBlockChildDate{
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  font-size: 40px;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.infoBlockChildSingle {
+  margin-right: 1rem;
+}
+
+.infoBlockChildDateContainer{
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.h3, .h4, .infoBlockChildDetailsVenue {
+  font-family: 'Lora', serif;
+  font-weight: lighter !important;
+  text-transform: uppercase !important;
+  font-size: x-large;
+  margin-bottom: 0 !important;
+}
+
+.Timeline-Item::before{
+  background-color: #0070f3;
+}
+
+.newContainer h5 {
+  font-family: 'Lora', serif !important;
+  font-weight: lighter;
+  font-size: larger;
+}
+.newContainer h5 .JoyLink-colorPrimary, .infoSection p {
+  font-family: 'Lora', serif !important;
+  font-size: 1.5rem;
+}
+
+.scheduleLeft{
+  display: flex;
+  flex-direction: row;
+}
+
+.scheduleLeft div h5 {
+  margin-bottom: 0;
+}
+
+.scheduleLeft div p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  padding: 0 0rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.infoSection {
+  padding: 5rem 0.5rem;
+  text-align: center;
+  background-color: var(--secondary);
+}
+
+.infoSection h2, .infoSection p {
+  color:white;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
