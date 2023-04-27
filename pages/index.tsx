@@ -7,11 +7,11 @@ import { sessionOptions } from '../lib/session';
 import { User } from '../lib/user';
 import { withIronSessionSsr } from "iron-session/next";
 import { InferGetServerSidePropsType } from 'next';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import LoadingImage from '../styles/assets/LoadingImage.jpg';
 
 export const getServerSideProps = withIronSessionSsr(
-    async function getServerSideProps({ req, res }) {
+    async function getServerSideProps({ req }) {
       const user: User = req.session.user ?? { isAuthenticated: false, permission: "none" };
     if (user.isAuthenticated) {
       return {
@@ -79,7 +79,7 @@ export default function Home({user}: InferGetServerSidePropsType<typeof getServe
                 setError(true)
           } else {
             console.log("authenticated");
-              router.push("/details")
+              router.push("/details", undefined, { shallow: true})
             }
         })
         .catch((e) => console.log(e.message))
