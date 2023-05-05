@@ -1,7 +1,7 @@
 import { EventProps } from "../components/Event";
-import Two from '../styles/assets/pexels-anastasia-shuraeva-8752675.jpg';
-import Mirror from '../styles/assets/pexels-anastasia-shuraeva-8752665.jpg';
-import Henna from '../styles/assets/pexels-checan-6716575.jpg';
+import Two from '../styles/assets/pexels-anastasia-shuraeva-8752675.webp';
+import Mirror from '../styles/assets/pexels-anastasia-shuraeva-8752665.webp';
+import Henna from '../styles/assets/pexels-checan-6716575.webp';
 
 export const EventData: EventProps[] = [{
     date:'Friday, March 24',

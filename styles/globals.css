@@ -9,7 +9,7 @@ body {
   --primary: #490a20;
   --secondary: #4f1f30;
   --joy-palette-primary-softColor: #490a20 !important;
-  --joy-fontSize-md: 1.1rem !important
+  --joy-fontSize-md: 1.1rem !important;
 }
 a {
   color: inherit;

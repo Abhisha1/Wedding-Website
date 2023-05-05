@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useRef } from 'react';
 import HorizontalList from '../components/NavMenu';
 import styles from '../styles/Home.module.css';
-import Couple from '../styles/assets/IMAGE_HIGHLIGHT-530.jpg'
+import Couple from '../styles/assets/IMAGE_HIGHLIGHT-530.webp';
 import { motion, MotionValue, useTransform } from 'framer-motion';
 import { sessionOptions } from '../lib/session';
 import { User } from '../lib/user';
@@ -117,7 +117,8 @@ export default function Home({ user }: InferGetServerSidePropsType<typeof getSer
         <Image
                 src={Couple}
                 alt=""
-          priority
+        priority
+        width={600}
           className={styles.image}
           />
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}  className={styles.textBlock}>

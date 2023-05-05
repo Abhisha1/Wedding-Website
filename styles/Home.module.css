@@ -18,11 +18,13 @@
 @font-face {
   font-family: 'My-font';
   src: url(../styles/fonts/Gistesy.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Lora';
   src: url(../styles/fonts/Lora-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 .infoBlock {
@@ -37,6 +39,7 @@
 .infoBlock p {
   font-size: 1.5rem;
   font-family: 'Lora', serif;
+  font-display: swap;
 }
 
 .infoBlockV{
@@ -62,10 +65,12 @@
   font-size: xx-large;
   margin-top: 0;
   margin-bottom: 0.1rem;
+  font-display: swap;
 }
 
 .infoBlockChild h5, .infoBlockChild p {
   font-family: 'Lora', serif;
+  font-display: swap;
   font-weight: lighter;
   font-size: x-large;
 }
@@ -122,6 +127,7 @@
   font-weight: 500;
   letter-spacing: 2px;
   font-family: 'Lora', serif;
+  font-display: swap;
   text-transform: uppercase;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -152,6 +158,7 @@
 
 .infoBlockChildDetailsTitle{
   font-family: 'My-font', Arial, Helvetica, sans-serif;
+  font-display: swap;
   font-size: 50px;
   letter-spacing: 0.1rem;
 }
@@ -163,6 +170,7 @@
 
 .typeWriter{
   font-family: 'My-font', Arial, Helvetica, sans-serif !important;
+  font-display: swap;
   font-size: 8vw !important;
   text-align: center !important;
   font-weight: 500 !important;
@@ -203,6 +211,7 @@
 
 .parentNewContainer p {
   font-family: 'Lora', serif;
+  font-display: swap;
 }
 
 .textBlock{
@@ -276,6 +285,7 @@
 
 .h3, .h4, .infoBlockChildDetailsVenue {
   font-family: 'Lora', serif;
+  font-display: swap;
   font-weight: lighter !important;
   text-transform: uppercase !important;
   font-size: x-large;
@@ -288,11 +298,13 @@
 
 .newContainer h5 {
   font-family: 'Lora', serif !important;
+  font-display: swap;
   font-weight: lighter;
   font-size: larger;
 }
 .newContainer h5 .JoyLink-colorPrimary, .infoSection p {
   font-family: 'Lora', serif !important;
+  font-display: swap;
   font-size: 1.5rem;
 }
 
