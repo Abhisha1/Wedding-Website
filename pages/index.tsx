@@ -8,7 +8,7 @@ import { User } from '../lib/user';
 import { withIronSessionSsr } from "iron-session/next";
 import { InferGetServerSidePropsType } from 'next';
 import { useRouter } from 'next/router';
-import LoadingImage from '../styles/assets/LoadingImage.jpg';
+import LoadingImage from '../styles/assets/LoadingImage.webp';
 
 export const getServerSideProps = withIronSessionSsr(
     async function getServerSideProps({ req }) {
