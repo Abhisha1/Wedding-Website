@@ -5,7 +5,7 @@ import React, { useRef } from 'react';
 import HorizontalList from '../components/NavMenu';
 import styles from '../styles/Home.module.css';
 import Couple from '../styles/assets/IMAGE_HIGHLIGHT-530.webp';
-import { motion, MotionValue, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { sessionOptions } from '../lib/session';
 import { User } from '../lib/user';
 import { withIronSessionSsr } from "iron-session/next";
@@ -37,13 +37,8 @@ export const getServerSideProps = withIronSessionSsr(
     },sessionOptions
   );
 
-function useParallax(value: MotionValue<number>, distance: number) {
-  return useTransform(value, [0, 1], [-distance, distance]);
-}
-
 export default function Home({ user }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const text = "We're getting married!"
-  const ref = useRef(null);
 
   const theme = extendTheme({
     fontFamily: {

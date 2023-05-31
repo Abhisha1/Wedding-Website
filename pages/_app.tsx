@@ -11,6 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
         onError: (err) => {
           console.error(err)
         },
+        fallbackData: {
+          permission: "all",
+          isAuthenticated: true
+        }
       }}
     >
       <Component {...pageProps} />
